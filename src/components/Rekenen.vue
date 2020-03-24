@@ -74,7 +74,6 @@
                         url += e + "=" + data[e] + "&";
                     });
                     url = url.trim("&");
-                    console.log(process.env.API + '/api/generate/rekenen?' + url);
                     window.open(process.env.API + '/api/generate/rekenen?' + url, '_blank');
                 } else {
                     this.$q.notify({
